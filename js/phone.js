@@ -27,7 +27,7 @@ const phoneData = (phones) => {
         <figure><img src="${phone.image}" alt="phone" />
         </figure>
         <div class="card-body">
-            <h2 class="card-title text-4xl flex justify-center">Phones</h2>
+            <h2 class="card-title text-4xl flex justify-center">${phone.phone_name}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-center">
                 <button class="btn btn-error">Buy Now</button>
