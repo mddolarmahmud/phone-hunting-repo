@@ -1,4 +1,4 @@
-const phoneDataDescription = async (textSearch) => {
+const phoneDataDescription = async (textSearch = 13) => {
 	const res = await fetch(`https://openapi.programming-hero.com/api/phones?search=${textSearch}`);
 	const data = await res.json();
 	// console.log(data);
@@ -30,7 +30,7 @@ const phoneData = (phones) => {
             <h2 class="card-title text-4xl flex justify-center">${phone.phone_name}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-center">
-                <button class="btn btn-error">Buy Now</button>
+                <button class="btn btn-error">Details</button>
             </div>
         </div>
      `;
@@ -57,4 +57,4 @@ const loddingSpinner = (isLoddin) => {
 		loadingSpinner.classList.add('hidden');
 	}
 };
-// phoneDataDescription();
+phoneDataDescription();
